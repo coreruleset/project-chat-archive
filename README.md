@@ -2,7 +2,7 @@
 
 We are running a general project chat the first Monday of a month 20:30 CET and a chat about open issues the 3rd Monday of a month on the OWASP Slack, channel #Coreruleset.
 
-The Agenda for the chat is announced as a github issue in advance.
+The Agenda for the chat is announced as a github issue in advance with the tag `Meeting Agenda`. In the Agenda you will also find general news for the project like links to 3rd party news articles etc. Also look through the "other topics" in the agenda for infos about the project.
 
 | *Period* | *Project Chat* | *Issue Chat* |
 | -------- | -------------- | ------------ |
