@@ -5,6 +5,7 @@ We are running a general project chat the first Monday of a month 20:30 CET and 
 The Agenda for the chat is announced as a github issue in advance.
 
 | *Period* | *Project Chat* | *Issue Chat* |
+| -------- | -------------- | ------------ |
 | 2018, November | chat-archive-2018-11-05.md | n.a. |
 | 2018, December | chat-archive-2018-12-03.md | n.a. |
 | 2019, January | chat-archive-2019-01-07.md | n.a. |
