@@ -1,4 +1,4 @@
-## Protocols od the project chats
+## Protocols of the project chats
 
 We are running a general project chat the first Monday of a month 20:30 CET and a chat about open issues the 3rd Monday of a month on the OWASP Slack, channel #Coreruleset.
 
@@ -28,23 +28,23 @@ The Agenda for the chat is announced as a github issue in advance.
 | 2020, July | chat-archive-2020-07-06.md | n.a. |
 | 2020, August | chat-archive-2020-08-03.md | n.a. |
 | 2020, September | n.a. (conference) | n.a. |
-| 2020, October | chat-archive-2020-10-05.md | chat-archive-2020-10-19.md
-| 2020, November | chat-archive-2020-11-02.md | chat-archive-2020-11-16.md
-| 2020, December | chat-archive-2020-12-07.md | chat-archive-2020-12-21.md
-| 2021, January | chat-archive-2021-01-04.md | chat-archive-2021-01-18.md
-| 2021, February | chat-archive-2021-02-01.md | chat-archive-2021-02-15.md
+| 2020, October | chat-archive-2020-10-05.md | chat-archive-2020-10-19.md |
+| 2020, November | chat-archive-2020-11-02.md | chat-archive-2020-11-16.md |
+| 2020, December | chat-archive-2020-12-07.md | chat-archive-2020-12-21.md |
+| 2021, January | chat-archive-2021-01-04.md | chat-archive-2021-01-18.md |
+| 2021, February | chat-archive-2021-02-01.md | chat-archive-2021-02-15.md |
 | 2021, March | chat-archive-2021-03-01.md | |
-| 2021, April | chat-archive-2021-04-05.md | chat-archive-2021-04-19.md
-| 2021, May | chat-archive-2021-05-03.md | chat-archive-2021-05-17.md
-| 2021, June | chat-archive-2021-06-07.md | chat-archive-2021-06-21.md
-| 2021, July | chat-archive-2021-07-05.md | chat-archive-2021-07-19.md
-| 2021, August | chat-archive-2021-08-02.md | chat-archive-2021-08-16.md
-| 2021, September | chat-archive-2021-09-06.md | chat-archive-2021-09-20.md
-| 2021, October | chat-archive-2021-10-04.md | chat-archive-2021-10-18.md
-| 2021, November | chat-archive-2021-11-01.md | chat-archive-2021-11-15.md
-| 2021, December | chat-archive-2021-12-06.md | chat-archive-2021-12-20.md
-| 2022, January | chat-archive-2022-01-03.md | chat-archive-2022-01-17.md
-| 2022, February | chat-archive-2022-02-07.md | chat-archive-2022-02-21.md
+| 2021, April | chat-archive-2021-04-05.md | chat-archive-2021-04-19.md |
+| 2021, May | chat-archive-2021-05-03.md | chat-archive-2021-05-17.md |
+| 2021, June | chat-archive-2021-06-07.md | chat-archive-2021-06-21.md |
+| 2021, July | chat-archive-2021-07-05.md | chat-archive-2021-07-19.md |
+| 2021, August | chat-archive-2021-08-02.md | chat-archive-2021-08-16.md |
+| 2021, September | chat-archive-2021-09-06.md | chat-archive-2021-09-20.md |
+| 2021, October | chat-archive-2021-10-04.md | chat-archive-2021-10-18.md |
+| 2021, November | chat-archive-2021-11-01.md | chat-archive-2021-11-15.md |
+| 2021, December | chat-archive-2021-12-06.md | chat-archive-2021-12-20.md |
+| 2022, January | chat-archive-2022-01-03.md | chat-archive-2022-01-17.md |
+| 2022, February | chat-archive-2022-02-07.md | chat-archive-2022-02-21.md |
 | 2022, March | chat-archive-2022-03-07.md | |
 
 ## How to generate the chat logs
