@@ -46,7 +46,7 @@ The Agenda for the chat is announced as a github issue in advance.
 | 2021, December | [chat-archive-2021-12-06.md](chat-archive-2021-12-06.md) | [chat-archive-2021-12-20.md](chat-archive-2021-12-20.md) |
 | 2022, January | [chat-archive-2022-01-03.md](chat-archive-2022-01-03.md) | [chat-archive-2022-01-17.md](chat-archive-2022-01-17.md) |
 | 2022, February | [chat-archive-2022-02-07.md](chat-archive-2022-02-07.md) | [chat-archive-2022-02-21.md](chat-archive-2022-02-21.md) |
-| 2022, March | [chat-archive-2022-03-07.md](chat-archive-2022-03-07.md) | |
+| 2022, March | [chat-archive-2022-03-07.md](chat-archive-2022-03-07.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2401) / [Decisions](https://github.com/coreruleset/coreruleset/issues/2401#issuecomment-1061076993)) | |
 
 ## How to generate the chat logs
 
