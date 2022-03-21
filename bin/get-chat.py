@@ -7,6 +7,8 @@ import argparse
 import datetime
 import re
 
+TOKEN = "<fill-in-token-here>"
+
 def send_request(req):
     return requests.post(req['url'], data = req['data'])
 
@@ -26,7 +28,7 @@ def get_user_info(user):
     req = {
         'url': "%s://%s%s" % (USERINFO_URL['scheme'], USERINFO_URL['host'], USERINFO_URL['resource']),
         'data': {
-            'token':   "xoxp-4922022609-396188786166-1656586219749-bae9543809c2c30734621500d686bd82",
+            'token':   TOKEN,
             'channel': "CBKGH8A5P",
             'user':    user
         },
@@ -41,7 +43,7 @@ CONV_URL = {
 }
 
 DATA = {
-    'token':   "xoxp-4922022609-396188786166-1656586219749-bae9543809c2c30734621500d686bd82",
+    'token':   TOKEN,
     'channel': "CBKGH8A5P"
 }
 
