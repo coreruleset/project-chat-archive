@@ -207,7 +207,8 @@ Any thoughts / additional items? Otherwise, let's start.</span>
 ```
 941220 groups 136
 941210 groups 168
-```</span>
+```
+</span>
 
 **fgs** <span style="color: grey; font-size: 90%;">19:40:34 UTC</span>
 
