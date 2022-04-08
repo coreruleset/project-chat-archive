@@ -7,8 +7,6 @@ import argparse
 import datetime
 import re
 
-TOKEN = "<fill-in-token-here>"
-
 def send_request(req):
     return requests.post(req['url'], data = req['data'])
 
@@ -24,11 +22,11 @@ USERINFO_URL = {
     'resource':  "/api/users.info"
 }
 
-def get_user_info(user):
+def get_user_info(user, token):
     req = {
         'url': "%s://%s%s" % (USERINFO_URL['scheme'], USERINFO_URL['host'], USERINFO_URL['resource']),
         'data': {
-            'token':   TOKEN,
+            'token':   token,
             'channel': "CBKGH8A5P",
             'user':    user
         },
@@ -43,7 +41,7 @@ CONV_URL = {
 }
 
 DATA = {
-    'token':   TOKEN,
+    'token':   None,
     'channel': "CBKGH8A5P"
 }
 
@@ -62,10 +60,16 @@ if __name__ == "__main__":
                         type=str, help='From date and time', required=False)
     parser.add_argument("-m", "--max", dest="maxout", metavar='N',
                         type=int, help='Max number of pieces of output', required=False)
+    parser.add_argument("-T", "--token", dest="token", metavar='STR',
+                        type=str, help='Slack API token', required=False)
     args = parser.parse_args()
 
     if args.fromtime is None and args.totime is None and args.maxout is None:
         print("You must pass at least -f (from) and -t (to) OR -m (max) argument")
+        sys.exit()
+
+    if args.token is None:
+        print("You must pass the Slack API tokenn via -T / --token")
         sys.exit()
 
     if args.fromtime is not None:
@@ -76,6 +80,7 @@ if __name__ == "__main__":
 
     conv_req['data']['oldest'] = fromtime
     conv_req['data']['latest'] = totime
+    conv_req['data']['token'] = args.token
 
     outcnt = 0
     while True:
@@ -85,16 +90,16 @@ if __name__ == "__main__":
             midx = 0
             for m in resp['messages']:
                 if 'user' in m and m['user'] not in users:
-                    users[m['user']] = get_user_info(m['user'])
+                    users[m['user']] = get_user_info(m['user'], args.token)
                 if 'users' in m:
                     for u in m['users']:
                         if u not in users:
-                            users[u] = get_user_info(u)
+                            users[u] = get_user_info(u, args.token)
                 grp = re.findall("<@[A-Z0-9]+>", m['text'])
                 for p in grp:
                     u = p.replace("<@", "").replace(">", "")
                     if u not in users:
-                        users[u] = get_user_info(u)
+                        users[u] = get_user_info(u, args.token)
                 if 'thread_ts' in m:
                     replies = {
                         'url': "%s://%s%s" % (CONV_URL['scheme'], CONV_URL['host'], "/api/conversations.replies"),
@@ -108,7 +113,7 @@ if __name__ == "__main__":
                         for p in grp:
                             u = p.replace("<@", "").replace(">", "")
                             if u not in users:
-                                users[u] = get_user_info(u)
+                                users[u] = get_user_info(u, args.token)
                 midx += 1
             print("Writing data to out_%03d.json with number of %d items..." % (outcnt, len(resp['messages'])))
             fp.write(json.dumps(resp, indent=4, sort_keys=True))
