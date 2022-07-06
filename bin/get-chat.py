@@ -88,6 +88,9 @@ if __name__ == "__main__":
         outcnt += 1
         with open("out_%03d.json" % (outcnt), "w") as fp:
             midx = 0
+
+            # debug: print(resp)
+
             for m in resp['messages']:
                 if 'user' in m and m['user'] not in users:
                     users[m['user']] = get_user_info(m['user'], args.token)

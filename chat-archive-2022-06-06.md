@@ -52,7 +52,7 @@ This is meant for developers with commit rights.</span>
 
 **dune73** <span style="color: grey; font-size: 90%;">18:34:49 UTC</span>
 
-<span style="font-size: 90%;">https://drive.google.com/drive/folders/REDACTED<span>
+<span style="font-size: 90%;">https://drive.google.com/drive/folders/REDACTED</span>
 
 **maxleske** <span style="color: grey; font-size: 90%;">18:35:32 UTC</span>
 
