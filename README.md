@@ -54,7 +54,21 @@ The Agenda for the chat is announced as a github issue in advance with the tag `
 
 ## How to generate the chat logs
 
-There are 3 scripts in the bin folder:
+### 3 Scripts
+
 * generate-all.sh : master script that fetches and formats all the chats based on `chat-dates.txt`. Slack API token is expected in env variable `$TOKEN`. @dune73 has the token.
 * get-chat.py : script called by `generate-all.sh`; it fetches the chats from slack.
 * chat2md.py : script called by `generate-all.sh`; it reformats the chats JSON files into mardown (`.md`)
+
+### File chat-dates.txt
+
+Edit the file `chat-dates.txt` and add chat dates.
+
+### Generate
+
+```bash
+$ export TOKEN="******"
+$ ./bin/generate-all.sh
+```
+
+
