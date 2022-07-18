@@ -114,7 +114,7 @@
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:39:37 UTC</span>
 
-<span style="font-size: 90%;">First is [#2562](https://github.com/coreruleset/coreruleset/issues/#2562)</span>
+<span style="font-size: 90%;">First is [#2562](https://github.com/coreruleset/coreruleset/issues/2562)</span>§
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:40:25 UTC</span>
 
@@ -179,7 +179,7 @@
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:46:57 UTC</span>
 
-<span style="font-size: 90%;">Next I’ve added [#2621](https://github.com/coreruleset/coreruleset/issues/#2621), so everyone can take a look on the remaining</span>
+<span style="font-size: 90%;">Next I’ve added [#2621](https://github.com/coreruleset/coreruleset/issues/2621), so everyone can take a look on the remaining</span>
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:47:14 UTC</span>
 
@@ -231,7 +231,7 @@
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:53:14 UTC</span>
 
-<span style="font-size: 90%;">Next: [#2680](https://github.com/coreruleset/coreruleset/issues/#2680)</span>
+<span style="font-size: 90%;">Next: [#2680](https://github.com/coreruleset/coreruleset/issues/2680)</span>
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:53:47 UTC</span>
 
@@ -255,7 +255,7 @@
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:58:14 UTC</span>
 
-<span style="font-size: 90%;">So [#2676](https://github.com/coreruleset/coreruleset/issues/#2676).</span>
+<span style="font-size: 90%;">So [#2676](https://github.com/coreruleset/coreruleset/issues/2676).</span>
 
 **fzipitria** <span style="color: grey; font-size: 90%;">18:59:02 UTC</span>
 
@@ -339,7 +339,7 @@
 
 **fzipitria** <span style="color: grey; font-size: 90%;">19:05:15 UTC</span>
 
-<span style="font-size: 90%;">Last one [#2625](https://github.com/coreruleset/coreruleset/issues/#2625)</span>
+<span style="font-size: 90%;">Last one [#2625](https://github.com/coreruleset/coreruleset/issues/2625)</span>
 
 **fzipitria** <span style="color: grey; font-size: 90%;">19:05:55 UTC</span>
 
@@ -408,34 +408,34 @@
 **fzipitria** <span style="color: grey; font-size: 90%;">19:11:28 UTC</span>
 
 <span style="font-size: 90%;"># The contents of this list come from the [PHP source code]([https://github.com](https://github.com):php/php-src).
-#
-# There are different types of errors that might be thrown. An easy way to discover them is to
-# get any text that comes from the error handling functions: `zend_error`, `zend_throw_error`, `soap_error0`, etc.
-# Using the regexp `_error([0-9])?\(` will give you all. And you can see them using:
-# `grep -h -E -r -o --exclude="*.phpt" '\w+_error([0-9])?\(' * | sort | uniq`
-#
-# After getting the list, there are two different types of errors: those with literal text, and those that include
-# print format args like `%s`, `%d`, `%zu`, etc. We sort them in two groups.
-#
-# The first group is just anything without formatting args. Only text, sorted ascending. Command used:
-#   - `grep -E -h -r --exclude="*.phpt" '_error([0-9])?\(' * | awk -F\" '{ print $2;} ' | sed -e 's/ \\$/ "/g' | sort | uniq | grep -v '%'`
-# Post processing might be necessary to adjust strings that can cause false positives, such as
-# - line is very short
-# - line is a (partial) common English sentence, like `Can use`, `Attribute`, etc.
-# - text coming from php unit/regression tests, like 'DROP TABLE IF EXISTS test_bug_71863`
-#
-# The second group will be the part with format strings. Only text, sorted ascending.
-# This will need a more careful processing. The format string will appear in the text result,
-# but it will (of course) be substituted by some variable value. So we need to clean more text here.
-# The easiest way is to split a line whenever a format string is found. This will shorten the texts but,
-# then we can sort out the ones we don't want to include more easily.
-# We also remove:
-# - text with just one word (likely to be FP), or one word, one space (optional) and one non-word (optional),
-#   which will match things like `Collect "`, `Method` or `Class `.
-# Command used:
-#   - `grep -E -h -r --exclude="*.phpt" '_error([0-9])?\(' * | awk -F\" '/%/ { print $2;} ' | sed -e 's/ \\$/ "/g' -e 's/%[zlp][ud]/\n/g' -e 's/%[a-z]/\n/g'  -e 's/%\.\*s/\n/g' | sort | uniq | grep -E -v '^\w+\s?\W?$' | grep -E -v '^\W+$'
-#
-# Anything that is too short, or nonsense, we remove.</span>
+
+There are different types of errors that might be thrown. An easy way to discover them is to
+get any text that comes from the error handling functions: `zend_error`, `zend_throw_error`, `soap_error0`, etc.
+Using the regexp `_error([0-9])?\(` will give you all. And you can see them using:
+`grep -h -E -r -o --exclude="*.phpt" '\w+_error([0-9])?\(' * | sort | uniq`
+
+After getting the list, there are two different types of errors: those with literal text, and those that include
+print format args like `%s`, `%d`, `%zu`, etc. We sort them in two groups.
+
+The first group is just anything without formatting args. Only text, sorted ascending. Command used:
+  - `grep -E -h -r --exclude="*.phpt" '_error([0-9])?\(' * | awk -F\" '{ print $2;} ' | sed -e 's/ \\$/ "/g' | sort | uniq | grep -v '%'`
+Post processing might be necessary to adjust strings that can cause false positives, such as
+- line is very short
+- line is a (partial) common English sentence, like `Can use`, `Attribute`, etc.
+- text coming from php unit/regression tests, like 'DROP TABLE IF EXISTS test_bug_71863`
+
+The second group will be the part with format strings. Only text, sorted ascending.
+This will need a more careful processing. The format string will appear in the text result,
+but it will (of course) be substituted by some variable value. So we need to clean more text here.
+The easiest way is to split a line whenever a format string is found. This will shorten the texts but,
+then we can sort out the ones we don't want to include more easily.
+We also remove:
+- text with just one word (likely to be FP), or one word, one space (optional) and one non-word (optional),
+  which will match things like `Collect "`, `Method` or `Class `.
+Command used:
+  - `grep -E -h -r --exclude="*.phpt" '_error([0-9])?\(' * | awk -F\" '/%/ { print $2;} ' | sed -e 's/ \\$/ "/g' -e 's/%[zlp][ud]/\n/g' -e 's/%[a-z]/\n/g'  -e 's/%\.\*s/\n/g' | sort | uniq | grep -E -v '^\w+\s?\W?$' | grep -E -v '^\W+$'
+
+Anything that is too short, or nonsense, we remove.</span>
 
 **xanadu** <span style="color: grey; font-size: 90%;">19:12:12 UTC</span>
 
