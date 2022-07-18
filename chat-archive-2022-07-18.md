@@ -456,18 +456,18 @@ Anything that is too short, or nonsense, we remove.</span>
 **fzipitria** <span style="color: grey; font-size: 90%;">19:15:01 UTC</span>
 
 <span style="font-size: 90%;"># This list has generic unix shell variables, shells and commands that affect Unix systems.
-# To generate the list, we get the data from all places first. Strip or add the path to commands so it begins with `bin`.
-# Sort the file content ascending, and remove duplicate lines.
-#
-# Data comes from multiple places, listed below.
-# - Binaries:
-#   - GTFOBins. Update list using `curl -H "Accept: application/vnd.github.v3+json" [https://api.github.com/repos/GTFOBins/GTFOBins.github.io/contents/_gtfobins](https://api.github.com/repos/GTFOBins/GTFOBins.github.io/contents/_gtfobins) | jq '.[].name' | grep '.md' | tr -d '"' | cut -f1 -d.`
-# - Shell lists:
-#   - [https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/etc.html](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/etc.html)
-#   - [https://en.wikipedia.org/wiki/Unix_shell](https://en.wikipedia.org/wiki/Unix_shell)
-#   - [https://hyperpolyglot.org/unix-shells](https://hyperpolyglot.org/unix-shells)
-# - Generic shell variables (Ad-Hoc for now, needs references)
-# - Generic /etc and /dev files (Ad-Hoc, needs references)</span>
+To generate the list, we get the data from all places first. Strip or add the path to commands so it begins with `bin`.
+Sort the file content ascending, and remove duplicate lines.
+
+Data comes from multiple places, listed below.
+- Binaries:
+  - GTFOBins. Update list using `curl -H "Accept: application/vnd.github.v3+json" [https://api.github.com/repos/GTFOBins/GTFOBins.github.io/contents/_gtfobins](https://api.github.com/repos/GTFOBins/GTFOBins.github.io/contents/_gtfobins) | jq '.[].name' | grep '.md' | tr -d '"' | cut -f1 -d.`
+- Shell lists:
+  - [https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/etc.html](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/etc.html)
+  - [https://en.wikipedia.org/wiki/Unix_shell](https://en.wikipedia.org/wiki/Unix_shell)
+  - [https://hyperpolyglot.org/unix-shells](https://hyperpolyglot.org/unix-shells)
+- Generic shell variables (Ad-Hoc for now, needs references)
+- Generic /etc and /dev files (Ad-Hoc, needs references)</span>
 
 **fzipitria** <span style="color: grey; font-size: 90%;">19:15:35 UTC</span>
 
