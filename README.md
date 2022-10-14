@@ -74,4 +74,5 @@ $ export TOKEN="******"
 $ ./bin/generate-all.sh
 ```
 
+Add links new files, agenda, decisions etc to table in README.md.
 
