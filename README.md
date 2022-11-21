@@ -54,7 +54,7 @@ The Agenda for the chat is announced as a github issue in advance with the tag `
 | 2022, August | [chat-archive-2022-08-01.md](chat-archive-2022-08-01.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2690) / [Decisions](https://github.com/coreruleset/coreruleset/issues/2690#issuecomment-1201615925)) | [chat-archive-2022-08-15.md](chat-archive-2022-08-15.md) |
 | 2022, September | [chat-archive-2022-09-05.md](chat-archive-2022-09-05.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2755)) | [chat-archive-2022-09-19.md](chat-archive-2022-09-19.md) |
 | 2022, October | [chat-archive-2022-10-03.md](chat-archive-2022-10-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2823)) | [chat-archive-2022-10-17.md](chat-archive-2022-10-17.md) |
-| 2022, November | [chat-archive-2022-11-07.md](chat-archive-2022-11-07.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2824)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/2824#issuecomment-1306186798) |  |
+| 2022, November | [chat-archive-2022-11-07.md](chat-archive-2022-11-07.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2824)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/2824#issuecomment-1306186798) | [chat-archive-2022-11-21.md](chat-archive-2022-11-21.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/2824)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/2824#issuecomment-1322602454) |
 
 ## How to generate the chat logs
 
