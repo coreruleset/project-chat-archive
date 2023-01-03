@@ -125,7 +125,7 @@ if __name__ == "__main__":
         if 'response_metadata' in resp and 'next_cursor' in resp['response_metadata']:
             conv_req['data']['cursor'] = resp['response_metadata']['next_cursor']
         else:
-            print("No more next_cursor, exitting")
+            print("No more next_cursor, exiting")
             break
 
         if args.maxout is not None and args.maxout == outcnt:
