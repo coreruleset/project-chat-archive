@@ -60,6 +60,14 @@ The Agenda for the chat is announced as a github issue in advance with the tag `
 | 2023, February | [chat-archive-2023-02-06.md](chat-archive-2023-02-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3038)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3038#issuecomment-1419716639) | [chat-archive-2023-02-20.md](chat-archive-2023-02-20.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3038)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3038#issuecomment-1437475356) |
 | 2023, March | [chat-archive-2023-03-06.md](chat-archive-2023-03-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3039)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3039#issuecomment-1456933497) | [chat-archive-2023-03-20.md](chat-archive-2023-03-20.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3039)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3039#issuecomment-1476861206) |
 | 2023, April | [chat-archive-2023-04-03.md](chat-archive-2023-04-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3159)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3159#issuecomment-1494812544) | n.n. |
+| 2023, Mai | [chat-archive-2023-05-01.md](chat-archive-2023-05-01.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3204)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3204#issuecomment-1530141155) |  [chat-archive-2023-05-15.md](chat-archive-2023-05-15.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3204)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3204#issuecomment-1548376107) |
+| 2023, June | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
+| 2023, July | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
+| 2023, August | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
+| 2023, September | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
+| 2023, October | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
+| 2023, November | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
+| 2023, December | []() ([Agenda]()) / [Decisions]() |  []() ([Agenda]()) / [Decisions]() |
 
 ## How to generate the chat logs
 
