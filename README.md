@@ -1,8 +1,8 @@
 ## Protocols of the project chats
 
-We are running a general project chat the first Monday of a month 20:30 CET and a chat about open issues the 3rd Monday of a month on the OWASP Slack, channel #Coreruleset.
+We are running a general project chat on the first Monday of every month 20:30 CET in the #coreruleset channel of the OWASP Slack.
 
-The Agenda for the chat is announced as a github issue in advance with the tag `Meeting Agenda`. In the Agenda you will also find general news for the project like links to 3rd party news articles etc. Also look through the "other topics" in the agenda for infos about the project.
+The Agenda for the chat is announced as a GitHub issue in advance with the tag `Meeting Agenda`. In the Agenda you will also find general news for the project like links to 3rd party news articles etc. Also look through the "other topics" in the agenda for infos about the project.
 
 | *Period* | *Project Chat* | *Issue Chat* |
 | -------- | -------------- | ------------ |
@@ -71,25 +71,32 @@ The Agenda for the chat is announced as a github issue in advance with the tag `
 | 2024, January   | [chat-archive-2024-01-08.md](chat-archive-2024-01-08.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3466)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3466#issuecomment-1881762255) | [chat-archive-2024-01-22.md](chat-archive-2024-01-22.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3466)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3466#issuecomment-1904742398) |
 | 2024, February  | [chat-archive-2024-02-05.md](chat-archive-2024-02-05.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3529)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3529#issuecomment-1928137908) | [chat-archive-2024-02-19.md](chat-archive-2024-02-19.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3529)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3529#issuecomment-1953121055) |
 | 2024, March  | [chat-archive-2024-03-04.md](chat-archive-2024-03-04.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3530)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3530#issuecomment-1977383432) | [chat-archive-2024-03-18.md](chat-archive-2024-03-18.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3530)) / [Decisions](https://github.com/coreruleset/coreruleset/issues/3530#issuecomment-2004987950) |
+| 2024, April  | [chat-archive-2024-04-01.md](chat-archive-2024-04-01.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3636)) | [chat-archive-2024-04-15.md](chat-archive-2024-04-15.md) |
+| 2024, May  | [chat-archive-2024-05-06.md](chat-archive-2024-05-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3694)) | [chat-archive-2024-05-20.md](chat-archive-2024-05-20.md) |
+| 2024, June  | [chat-archive-2024-06-03.md](chat-archive-2024-06-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3728)) | [chat-archive-2024-06-17.md](chat-archive-2024-06-17.md) |
+| 2024, July  | [chat-archive-2024-07-01.md](chat-archive-2024-07-01.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3753)) | [chat-archive-2024-07-15.md](chat-archive-2024-07-15.md) |
+| 2024, August  | [chat-archive-2024-08-05.md](chat-archive-2024-08-05.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3785)) | [chat-archive-2024-08-19.md](chat-archive-2024-08-19.md) |
+| 2024, September  | [chat-archive-2024-09-02.md](chat-archive-2024-09-02.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3808)) | [chat-archive-2024-09-16.md](chat-archive-2024-09-16.md) |
+| 2024, October  | [chat-archive-2024-10-07.md](chat-archive-2024-10-07.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3848)) | [chat-archive-2024-10-21.md](chat-archive-2024-10-21.md) |
+| 2024, December  | [chat-archive-2024-12-02.md](chat-archive-2024-12-02.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3950)) | |
+| 2025, January  | [chat-archive-2024-01-06.md](chat-archive-2024-01-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3975)) | |
+| 2025, February  | [chat-archive-2024-02-03.md](chat-archive-2024-02-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3990)) | |
+| 2025, March  | [chat-archive-2024-03-03.md](chat-archive-2024-03-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4033)) | |
 
 ## How to generate the chat logs
 
-### 3 Scripts
+### Files
 
-* generate-all.sh : master script that fetches and formats all the chats based on `chat-dates.txt`. Slack API token is expected in env variable `$TOKEN`. @dune73 has the token.
-* get-chat.py : script called by `generate-all.sh`; it fetches the chats from slack.
-* chat2md.py : script called by `generate-all.sh`; it reformats the chats JSON files into mardown (`.md`)
-
-### File chat-dates.txt
-
-Edit the file `chat-dates.txt` and add chat dates.
+* generate-all.py: master script that fetches and formats all the chats based on `chat-dates.txt`.
+* get-chat.py: used by `generate-all.py`; it fetches the chats from Slack. Can also be run directly.
+* chat2md.py: used by `generate-all.py`; it reformats the chats JSON files into mardown (`.md`). Can also be run directly.
+* chat-dates.txt: Edit the file `chat-dates.txt` and add chat dates.
 
 ### Generate
 
-```bash
-$ export TOKEN="******"
-$ ./bin/generate-all.sh
-```
-
-Add links new files, agenda, decisions etc to table in README.md.
-
+1. Install [poetry](https://python-poetry.org/docs/#installation)
+2. Obtain a Slack token. If you don't have one, you need to [create an app](https://api.slack.com/apps) with the "user token" scopes "channel:history" and "users:read" and get the "user token" for that app.
+3. run `poetry install`
+4. update `chat-dates.txt` with the latest chat dates
+5. run `poetry run bin/generate-all.py -t <token>`
+6. Add links to new archives and agendas to the table in README.md.
