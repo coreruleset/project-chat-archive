@@ -79,9 +79,9 @@ The Agenda for the chat is announced as a GitHub issue in advance with the tag `
 | 2024, September  | [chat-archive-2024-09-02.md](chat-archive-2024-09-02.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3808)) | [chat-archive-2024-09-16.md](chat-archive-2024-09-16.md) |
 | 2024, October  | [chat-archive-2024-10-07.md](chat-archive-2024-10-07.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3848)) | [chat-archive-2024-10-21.md](chat-archive-2024-10-21.md) |
 | 2024, December  | [chat-archive-2024-12-02.md](chat-archive-2024-12-02.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3950)) | |
-| 2025, January  | [chat-archive-2024-01-06.md](chat-archive-2024-01-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3975)) | |
-| 2025, February  | [chat-archive-2024-02-03.md](chat-archive-2024-02-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3990)) | |
-| 2025, March  | [chat-archive-2024-03-03.md](chat-archive-2024-03-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4033)) | |
+| 2025, January  | [chat-archive-2025-01-06.md](chat-archive-2025-01-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3975)) | |
+| 2025, February  | [chat-archive-2025-02-03.md](chat-archive-2025-02-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/3990)) | |
+| 2025, March  | [chat-archive-2025-03-03.md](chat-archive-2025-03-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4033)) | |
 
 ## How to generate the chat logs
 
