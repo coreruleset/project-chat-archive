@@ -98,6 +98,7 @@ The Agenda for the chat is announced as a GitHub issue in advance with the tag `
 | 2026, June  | [chat-archive-2026-06-01.md](chat-archive-2026-06-01.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4646)) | |
 | 2026, July  | [chat-archive-2026-07-06.md](chat-archive-2026-07-06.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4701)) | |
 | 2026, August  | [chat-archive-2026-08-03.md](chat-archive-2026-08-03.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4748)) | |
+| 2026, September  | [chat-archive-2026-09-07.md](chat-archive-2026-09-07.md) ([Agenda](https://github.com/coreruleset/coreruleset/issues/4781)) | |
 
 
 ## How to generate the chat logs
