@@ -36,8 +36,7 @@ def run(fromtime, totime, token, maxout=None):
         resp = send_request(HISTORY_RESOURCE_PATH, token, extra_data=data).json()
         if outcnt == 0 and len(resp["messages"]) == 0:
             print(f"No messages for {fromtime} - {totime}. Wrong date?")
-            breakpoint()
-            sys.exit()
+            sys.exit(1)
 
         outcnt += 1
         with open(f"out_{outcnt:03d}.json", "w") as fp:
